@@ -21,7 +21,7 @@ python owa_pot.py
 ## here be dragons!
 In the code I basically start the flask dev server on port 80, that is a really bad idea if you want to run it on the internet. I have a todo to change that. :)
 
-Anyway, it did work for what I wanted. 
+Anyway, it did work for what I wanted. I've added a crude write up here ![](https://joda32.github.io/2019/06/11/owa-plus-pastebin.html)
 
 ![](docs/OWA_honeypot_2.png)
 ![](docs/OWA_honeypot_3.png)
