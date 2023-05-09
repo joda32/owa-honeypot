@@ -127,17 +127,17 @@ def create_app(test_config=None):
     @app.route('/owa/auth/15.1.1466/themes/resources/segoeui-regular.ttf', methods=['GET'])
     @changeheader
     def font_segoeui_regular_ttf():
-        return send_from_directory(app.static_folder, filename='segoeui-regular.ttf', conditional=True)
+        return send_from_directory(app.static_folder, path='segoeui-regular.ttf', conditional=True)
         
     @app.route('/owa/auth/15.1.1466/themes/resources/segoeui-semilight.ttf', methods=['GET'])
     @changeheader
     def font_segoeui_semilight_ttf():
-        return send_from_directory(app.static_folder, filename='segoeui-semilight.ttf', conditional=True)
+        return send_from_directory(app.static_folder, path='segoeui-semilight.ttf', conditional=True)
 
     @app.route('/owa/auth/15.1.1466/themes/resources/favicon.ico', methods=['GET'])
     @changeheader
     def favicon_ico():
-        return send_from_directory(app.static_folder, filename='favicon.ico', conditional=True)
+        return send_from_directory(app.static_folder, path='favicon.ico', conditional=True)
 
     @app.route('/owa/auth.owa', methods=['GET', 'POST'])
     @changeheader
